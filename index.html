@@ -16,30 +16,25 @@
             <h1>Sign in</h1>
             <div class="credentials-box">
                 <p>Email</p>
-                <input type="email" name="email" id="email" placeholder="Email">
+                <input type="email" name="email" id="email" placeholder="Email"  pattern=".+@globex.com" size="30" required>
             </div>
             <div class="credentials-box">
                 <div class="pass">
                     <p>Password</p>
                     <p class="right"><a href="#">forgot password</a></p>
                 </div>
-                    <input type="password" name="password" id="password" placeholder="Password">
-                <span class="eye">
+                    <input type="password" name="password" id="password" placeholder="Password" minlength="8">
+                <span class="eye" onclick="showpass();">
                     <i id="hide1" class="fa fa-eye"></i>
                     <i id="hide2" class="fa fa-eye-slash"></i>
                 </span>
             </div>
             <div class="login-btn">
-                <button>LOGIN</button>
+                <button type="submit">LOGIN</button>
                 <p><a href="#">I don't have an account</a></p>
             </div>
         </div>
     </div>
-
-
-
-
-
 
     <script src="./script.js"></script>
 </body>
