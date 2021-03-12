@@ -10,31 +10,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login modal</title>
 </head>
+
+
 <body>
-    <div class="window-wrapper">
-        <div class="login-modal">
+    <div id="login-modal" class="window-wrapper">
+        <div class="modal">
             <h1>Sign in</h1>
             <div class="credentials-box">
                 <p>Email</p>
-                <input type="email" name="email" id="email" placeholder="Email"  pattern=".+@globex.com" size="30" required>
+                <input type="email" name="email" id="email" placeholder="Email" pattern=".+@globex.com" size="30" required>
             </div>
             <div class="credentials-box">
                 <div class="pass">
                     <p>Password</p>
                     <p class="right"><a href="#">forgot password</a></p>
                 </div>
-                    <input type="password" name="password" id="password" placeholder="Password" minlength="8">
-                <span class="eye" onclick="showpass();">
+                    <input type="password" name="password" id="password" placeholder="Password" minlength="8" required>
+                <span class="eye" onclick="showpassword();">
                     <i id="hide1" class="fa fa-eye"></i>
                     <i id="hide2" class="fa fa-eye-slash"></i>
                 </span>
             </div>
-            <div class="login-btn">
+            <div id="login" class="login-btn">
                 <button type="submit">LOGIN</button>
                 <p><a href="#">I don't have an account</a></p>
             </div>
         </div>
     </div>
+
+
+    <button id="login-btn" >Login</button>
 
     <script src="./script.js"></script>
 </body>

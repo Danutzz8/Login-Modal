@@ -21,7 +21,7 @@ list-style: none;
 }
 
 
-.login-modal {
+.modal {
     border-radius: 6px;
     background-color: rgb(255, 255, 255);
     position: absolute;
@@ -30,7 +30,7 @@ list-style: none;
     
 }
 
-.login-modal h1 {
+.modal h1 {
     font-size: 30px;
   font-family: "Lato";
   color: rgb(69, 65, 62);
@@ -41,7 +41,7 @@ list-style: none;
   z-index: 9;
 }
 
-.login-modal p {
+.modal p {
     font-size: 14px;
     font-family: "Lato";
 }
@@ -52,7 +52,7 @@ input:focus{
 }
 
 
-.login-modal .credentials-box {
+.modal .credentials-box {
     width: 420px;
     
     margin: 0 auto 0 auto;
@@ -126,5 +126,10 @@ button:focus{
 }
 
 #hide1 {
+    display: none;
+}
+
+#login-modal {
+    /* visibility: hidden; */
     display: none;
 }
